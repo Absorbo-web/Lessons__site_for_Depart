@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+.main {
+    width: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #edeef0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 50px;
+    background-color: #9FB6DA;
+    color: #2B4670;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.head__name {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 80%;
+    background-color: #edeef0;
+    border-radius: 5px;
+}
+
+.lessons {
+    position: relative;
+    margin-bottom: 10px;
+    /* padding: 20px; */
+    width: 100%;
+    min-height: 50px;
+    background-color: #fff;
+    color: #333;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    transition: all .2s linear;
+}
+
+.lesson__title {
+    position: relative;
+    padding: 20px;
+    transition: all .2s linear;
+    border-radius: 5px;
+}
+
+.lesson__title:hover {
+    background-color: #babcbe3a;
+}
+
+.lessons h1{
+    text-align: start;
+    font-size: 25px;
+}
+
+.lesson__item {
+    display: block;
+    width: 100%;
+    font-size: 0px;
+    transition: all .2s linear;
+}
+
+.lesson__item img{
+    width: 0%;
+    transition: all .2s linear;
+}
+
+.contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#check-anketa, #check-anketa1, #check-anketa2, #check-anketa3,
+#check-anketa4, #check-anketa5, #check-anketa6, #check-anketa7,
+#check-anketa8, #check-anketa9 {
+    display: none;
+}
+
+.lessons label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s linear;
+}
+
+#check-anketa:checked ~ .lesson__item{
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa:checked ~ .lesson__item img{
+    width: 50%;
+}
+
+#check-anketa1:checked ~ .q {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa1:checked ~ .q img{
+    width: 50%;
+}
+
+#check-anketa2:checked ~ .w {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa2:checked ~ .w img{
+    width: 60%;
+}
+
+#check-anketa3:checked ~ .e {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa3:checked ~ .e img{
+    width: 60%;
+}
+
+#check-anketa4:checked ~ .r {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa4:checked ~ .r img{
+    width: 60%;
+}
+
+#check-anketa5:checked ~ .t {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa5:checked ~ .lesson__item img{
+    width: 60%;
+}
+
+#check-anketa6:checked ~ .y {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa6:checked ~ .lesson__item img{
+    width: 100%;
+}
+
+#check-anketa7:checked ~ .u {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa7:checked ~ .lesson__item img{
+    width: 60%;
+}
+
+#check-anketa8:checked ~ .i {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa8:checked ~ .lesson__item img{
+    width: 60%;
+}
+
+#check-anketa9:checked ~ .o {
+    display: block;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#check-anketa9:checked ~ .lesson__item img{
+    width: auto;
+}
+
+/* ...................................
+footer
+.....................................*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2B4670;
+}
+
+.footer__info{
+    padding: 20px;
+    max-width: 1200px;
+    width: 80%;
+    color: #B6C4DA;
+}
+
+.footer__info a {
+    text-decoration: none;
+    color: #B6C4DA;
+}
+
+@media (max-width: 600px) {  
+    .container {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .footer__info{
+        padding: 10px;
+        width: 100%;
+    }
+}
