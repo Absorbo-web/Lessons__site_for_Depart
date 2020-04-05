@@ -21,7 +21,6 @@ header {
     top: 0;
     left: 0; */
     width: 100%;
-    height: 50px;
     background-color: #9FB6DA;
     color: #2B4670;
     font-size: 30px;
@@ -214,6 +213,7 @@ header {
 
 #check-anketa9:checked ~ .lesson__item img{
     width: auto;
+    max-width: 100%;
 }
 
 /* ...................................
